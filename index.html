@@ -209,31 +209,4 @@
       modal.style.display = 'none'
     })
   }
-
-  function openAllPDFsNow() {
-  const pdfLinks = [
-    "pdf/2024_Climate_Report.pdf",
-    "pdf/DCNF_2023.pdf",
-    "pdf/GSB_Report_2024.pdf",
-    "pdf/SDGs_Report_2024.pdf"
-  ];
-
-  let blocked = false;
-
-  pdfLinks.forEach((url) => {
-    const win = window.open(url, "_blank");
-    if (!win) {
-      blocked = true;
-    }
-  });
-
-  if (blocked) {
-    alert("Il browser ha bloccato alcune finestre popup. Consenti i popup per questo sito per scaricare i report.");
-  }
-}
-
-
-
-
-
 </script>
